@@ -1,19 +1,7 @@
-class Person{
-    public void introduce(){
-        System.out.println("난 학싱");
-    }
-}
-
-class Student extends Person{
-    public void introduce(){
-        System.out.println("대 1");
-    }
-}
-public class Main{
+public class Main {
     public static void main(String[] args){
-        Person person=new Person();
-        Student student=new Student();
-        person.introduce();
-        student.introduce();
+        CheckingAccount mychecking=new CheckingAccount("123-4567890",10000);
+        mychecking.displayAccountInfo();
+        mychecking.withdraw(1000);
     }
 }
